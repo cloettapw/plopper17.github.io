@@ -67,7 +67,7 @@ a:hover {
     color: #000;
 }
 #marquee {
-    width: 100px;
+    width: 400px;
     overflow: hidden;
     display: inline-block;
     margin-bottom: -3px;
