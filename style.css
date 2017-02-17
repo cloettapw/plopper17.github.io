@@ -51,7 +51,7 @@ pre {
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%, -50%);	
+	transform: translate(-50%, -50%);
 	-webkit-transform: translate(-50%, -50%);
 	-moz-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
@@ -89,4 +89,14 @@ a:hover {
 .js-marquee {
 	margin-right: 400px;
 	float: left;
+}
+
+#ascii-div {
+	display: block;
+	position: relative;
+	height: 150px;
+}
+
+#ascii {
+	text-align: left;
 }
