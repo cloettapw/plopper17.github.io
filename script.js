@@ -22,6 +22,7 @@ for (var guy in guys)
 
 	node.appendChild(text);
 	node.href = guys[guy];
+	node.target = "_blank";
 	marquee.appendChild(node);
 
 	var keys = Object.keys(guys);
@@ -39,6 +40,7 @@ for (var link in links)
 
 	node.appendChild(text);
 	node.href = links[link];
+	node.target = "_blank";
 	pre.appendChild(node);
 	center.appendChild(pre);
 }
