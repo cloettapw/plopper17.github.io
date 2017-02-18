@@ -10,7 +10,8 @@ var guys = {
 var links = {
 	"steam": "http://bit.ly/ploppsteam",
 	"youtube": "http://bit.ly/ploppyoutube",
-	"twitter": "http://bit.ly/plopptwitter"
+	"twitter": "http://bit.ly/plopptwitter",
+	"cloetta.pw": "http://cloetta.pw/"
 }
 
 var marquee = document.getElementsByClassName("js-marquee")[0];
