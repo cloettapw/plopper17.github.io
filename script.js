@@ -45,34 +45,3 @@ for (var link in links)
 	pre.appendChild(node);
 	center.appendChild(pre);
 }
-
-var asciiTitle = document.getElementById("ascii");
-
-var desired = "\
- ________  ___       ________  ________  ________   \n\
-|\\   __  \\|\\  \\     |\\   __  \\|\\   __  \\|\\   __  \\  \n\
-\\ \\  \\|\\  \\ \\  \\    \\ \\  \\|\\  \\ \\  \\|\\  \\ \\  \\|\\  \\ \n\
- \\ \\   ____\\ \\  \\    \\ \\  \\\\\\  \\ \\   ____\\ \\   ____\\\n\
-  \\ \\  \\___|\\ \\  \\____\\ \\  \\\\\\  \\ \\  \\___|\\ \\  \\___|\n\
-   \\ \\__\\    \\ \\_______\\ \\_______\\ \\__\\    \\ \\__\\   \n\
-    \\|__|     \\|_______|\\|_______|\\|__|     \\|__|   \
-"
-
-var iter = 0;
-var completion = 0;
-
-function timeout()
-{
-	setTimeout(function()
-	{
-		if (iter < desired.length - 1)
-		{
-			asciiTitle.innerHTML = desired.substring(0, iter);
-			iter++;
-		}
-		completion = iter / desired.length;
-		timeout();
-	}, Math.pow(completion, 3) * 50)
-}
-
-timeout();
