@@ -10,12 +10,13 @@
 		<pre>[<div id="marquee"><div class="js-marquee-wrapper"><div class="js-marquee"></div></div></div>]</pre>
 		<br>
 	</div>
-	<audio autoplay loop id="player">
-		<source src="assets/music.mp3" type="audio/mp3" />
-		<script>
-			var audio = document.currentScript.parentElement;
-			audio.volume = 0.3;
+	<video autoplay="1" loop="1" id="videoControl" class="Video">
+         <source src="video.mp4" type="video/mp4">
+         <script>
+			var video = document.currentScript.parentElement;
+			video.volume = 0.25;
 		</script>
+	</video>
 	</audio>
 </body>
 
