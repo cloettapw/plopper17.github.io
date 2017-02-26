@@ -74,6 +74,21 @@ a:hover {
 	margin-bottom: -3px;
 }
 
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    filter: grayscale(100%);
+
+}
+
 @-webkit-keyframes marqueeAnimation-62889320 {
 	100% {
 		margin-left:-320px
