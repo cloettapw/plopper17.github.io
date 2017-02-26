@@ -72,7 +72,7 @@ function timeout()
 		}
 		completion = iter / desired.length;
 		timeout();
-	}, Math.pow(completion, 3) * 75)
+	}, Math.pow(completion, 3) * 50)
 }
 
 timeout();
