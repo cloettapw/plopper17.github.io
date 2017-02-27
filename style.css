@@ -28,7 +28,11 @@
 body {
 	background-color: black;
 	color: #ffffff;
-	text-shadow: 1px 1px 0px rgba(8,230,255,100), -1px -1px 0px rgba(255,0,0,100);
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -75,7 +79,7 @@ a {
 }
 
 a:hover {
-	color: #000;
+	color: grey;
 }
 
 #marquee {
